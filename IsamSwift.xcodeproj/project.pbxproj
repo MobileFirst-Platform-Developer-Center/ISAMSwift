@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A927BB0A1DBEF18E00D28E5A /* NotificationCenterKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A927BB091DBEF18E00D28E5A /* NotificationCenterKeys.swift */; };
+		A927BB0C1DBEF78E00D28E5A /* IsamChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A927BB0B1DBEF78E00D28E5A /* IsamChallengeHandler.swift */; };
+		A95EE0861DBEEDCB00A98CEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95EE0851DBEEDCB00A98CEA /* AppDelegate.swift */; };
+		A95EE0881DBEEDCB00A98CEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95EE0871DBEEDCB00A98CEA /* ViewController.swift */; };
+		A95EE08B1DBEEDCB00A98CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95EE0891DBEEDCB00A98CEA /* Main.storyboard */; };
+		A95EE08D1DBEEDCB00A98CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95EE08C1DBEEDCB00A98CEA /* Assets.xcassets */; };
+		A95EE0901DBEEDCB00A98CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95EE08E1DBEEDCB00A98CEA /* LaunchScreen.storyboard */; };
+		A95EE0991DBEEEEB00A98CEA /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = A95EE0981DBEEEEB00A98CEA /* mfpclient.plist */; };
+		A95EE09B1DBEEFFB00A98CEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95EE09A1DBEEFFB00A98CEA /* LoginViewController.swift */; };
+		D3F29535E7AFF87F390B0C83 /* Pods_IsamSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D39C1CCDD03BD74DD27005 /* Pods_IsamSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		045F058099DA7EB621F00319 /* Pods-IsamSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsamSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-IsamSwift/Pods-IsamSwift.release.xcconfig"; sourceTree = "<group>"; };
+		04D39C1CCDD03BD74DD27005 /* Pods_IsamSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IsamSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47CA975FA157C3953361DA10 /* Pods-IsamSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IsamSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IsamSwift/Pods-IsamSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		A927BB091DBEF18E00D28E5A /* NotificationCenterKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenterKeys.swift; sourceTree = "<group>"; };
+		A927BB0B1DBEF78E00D28E5A /* IsamChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsamChallengeHandler.swift; sourceTree = "<group>"; };
+		A95EE0821DBEEDCB00A98CEA /* IsamSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IsamSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A95EE0851DBEEDCB00A98CEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A95EE0871DBEEDCB00A98CEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A95EE08A1DBEEDCB00A98CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A95EE08C1DBEEDCB00A98CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A95EE08F1DBEEDCB00A98CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A95EE0911DBEEDCB00A98CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A95EE0971DBEEDE500A98CEA /* IsamSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IsamSwift.entitlements; sourceTree = "<group>"; };
+		A95EE0981DBEEEEB00A98CEA /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
+		A95EE09A1DBEEFFB00A98CEA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A95EE07F1DBEEDCB00A98CEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F29535E7AFF87F390B0C83 /* Pods_IsamSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		903E00A2BB76F08F2976C04A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47CA975FA157C3953361DA10 /* Pods-IsamSwift.debug.xcconfig */,
+				045F058099DA7EB621F00319 /* Pods-IsamSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A95EE0791DBEEDCB00A98CEA = {
+			isa = PBXGroup;
+			children = (
+				A95EE0981DBEEEEB00A98CEA /* mfpclient.plist */,
+				A95EE0841DBEEDCB00A98CEA /* IsamSwift */,
+				A95EE0831DBEEDCB00A98CEA /* Products */,
+				903E00A2BB76F08F2976C04A /* Pods */,
+				EABFB1E6E70E4625C24BA253 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A95EE0831DBEEDCB00A98CEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A95EE0821DBEEDCB00A98CEA /* IsamSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A95EE0841DBEEDCB00A98CEA /* IsamSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A95EE0971DBEEDE500A98CEA /* IsamSwift.entitlements */,
+				A95EE0851DBEEDCB00A98CEA /* AppDelegate.swift */,
+				A95EE0871DBEEDCB00A98CEA /* ViewController.swift */,
+				A95EE0891DBEEDCB00A98CEA /* Main.storyboard */,
+				A95EE09A1DBEEFFB00A98CEA /* LoginViewController.swift */,
+				A95EE08C1DBEEDCB00A98CEA /* Assets.xcassets */,
+				A95EE08E1DBEEDCB00A98CEA /* LaunchScreen.storyboard */,
+				A95EE0911DBEEDCB00A98CEA /* Info.plist */,
+				A927BB091DBEF18E00D28E5A /* NotificationCenterKeys.swift */,
+				A927BB0B1DBEF78E00D28E5A /* IsamChallengeHandler.swift */,
+			);
+			path = IsamSwift;
+			sourceTree = "<group>";
+		};
+		EABFB1E6E70E4625C24BA253 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04D39C1CCDD03BD74DD27005 /* Pods_IsamSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A95EE0811DBEEDCB00A98CEA /* IsamSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A95EE0941DBEEDCB00A98CEA /* Build configuration list for PBXNativeTarget "IsamSwift" */;
+			buildPhases = (
+				597C9839AA06E0031AD2A72F /* [CP] Check Pods Manifest.lock */,
+				A95EE07E1DBEEDCB00A98CEA /* Sources */,
+				A95EE07F1DBEEDCB00A98CEA /* Frameworks */,
+				A95EE0801DBEEDCB00A98CEA /* Resources */,
+				52DD0589979039D0D3614E35 /* [CP] Embed Pods Frameworks */,
+				E97A4256A9950DD9F226A7A8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IsamSwift;
+			productName = IsamSwift;
+			productReference = A95EE0821DBEEDCB00A98CEA /* IsamSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A95EE07A1DBEEDCB00A98CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "IBM Australia";
+				TargetAttributes = {
+					A95EE0811DBEEDCB00A98CEA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7VG5G27PGZ;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A95EE07D1DBEEDCB00A98CEA /* Build configuration list for PBXProject "IsamSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A95EE0791DBEEDCB00A98CEA;
+			productRefGroup = A95EE0831DBEEDCB00A98CEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A95EE0811DBEEDCB00A98CEA /* IsamSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A95EE0801DBEEDCB00A98CEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95EE0901DBEEDCB00A98CEA /* LaunchScreen.storyboard in Resources */,
+				A95EE08D1DBEEDCB00A98CEA /* Assets.xcassets in Resources */,
+				A95EE08B1DBEEDCB00A98CEA /* Main.storyboard in Resources */,
+				A95EE0991DBEEEEB00A98CEA /* mfpclient.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52DD0589979039D0D3614E35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IsamSwift/Pods-IsamSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		597C9839AA06E0031AD2A72F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E97A4256A9950DD9F226A7A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IsamSwift/Pods-IsamSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A95EE07E1DBEEDCB00A98CEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A95EE09B1DBEEFFB00A98CEA /* LoginViewController.swift in Sources */,
+				A95EE0881DBEEDCB00A98CEA /* ViewController.swift in Sources */,
+				A95EE0861DBEEDCB00A98CEA /* AppDelegate.swift in Sources */,
+				A927BB0C1DBEF78E00D28E5A /* IsamChallengeHandler.swift in Sources */,
+				A927BB0A1DBEF18E00D28E5A /* NotificationCenterKeys.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A95EE0891DBEEDCB00A98CEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A95EE08A1DBEEDCB00A98CEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A95EE08E1DBEEDCB00A98CEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A95EE08F1DBEEDCB00A98CEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A95EE0921DBEEDCB00A98CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A95EE0931DBEEDCB00A98CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A95EE0951DBEEDCB00A98CEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CA975FA157C3953361DA10 /* Pods-IsamSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IsamSwift/IsamSwift.entitlements;
+				DEVELOPMENT_TEAM = 7VG5G27PGZ;
+				INFOPLIST_FILE = IsamSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.sample.mfp8isam.IsamSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A95EE0961DBEEDCB00A98CEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 045F058099DA7EB621F00319 /* Pods-IsamSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = IsamSwift/IsamSwift.entitlements;
+				DEVELOPMENT_TEAM = 7VG5G27PGZ;
+				INFOPLIST_FILE = IsamSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ibm.sample.mfp8isam.IsamSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A95EE07D1DBEEDCB00A98CEA /* Build configuration list for PBXProject "IsamSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95EE0921DBEEDCB00A98CEA /* Debug */,
+				A95EE0931DBEEDCB00A98CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A95EE0941DBEEDCB00A98CEA /* Build configuration list for PBXNativeTarget "IsamSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A95EE0951DBEEDCB00A98CEA /* Debug */,
+				A95EE0961DBEEDCB00A98CEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A95EE07A1DBEEDCB00A98CEA /* Project object */;
+}
