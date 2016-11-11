@@ -1,10 +1,9 @@
-//
-//  AppDelegate.swift
-//  IsamSwift
-//
-//  Created by Pranab Agarwal on 25/10/16.
-//  Copyright © 2016 IBM Australia. All rights reserved.
-//
+/*
+ * Licensed Materials - Property of IBM
+ * 5725-I43 (C) Copyright IBM Corp. 2016. All Rights Reserved
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ */
 
 import UIKit
 import IBMMobileFirstPlatformFoundation
@@ -45,4 +44,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

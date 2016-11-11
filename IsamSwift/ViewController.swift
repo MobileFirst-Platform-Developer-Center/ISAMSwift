@@ -1,28 +1,27 @@
-//
-//  ViewController.swift
-//  IsamSwift
-//
-//  Created by Pranab Agarwal on 25/10/16.
-//  Copyright © 2016 IBM Australia. All rights reserved.
-//
-
+/*
+ * Licensed Materials - Property of IBM
+ * 5725-I43 (C) Copyright IBM Corp. 2016. All Rights Reserved
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ */
+ 
 import UIKit
 import IBMMobileFirstPlatformFoundation
 
 class ViewController: UIViewController {
-    
+
     let useObtain = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         NotificationCenter.default.addObserver(self, selector: #selector(showLoginPage), name: ACTION_CHALLENGE_RECEIVED, object: nil)
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self)
         super.viewWillDisappear(animated)
@@ -53,7 +52,7 @@ class ViewController: UIViewController {
             })
         }
     }
-    
+
     @IBAction func logout(_ sender: UIButton) {
         WLAuthorizationManager.sharedInstance().logout("LtpaBasedSSO", withCompletionHandler: { (error) in
             if (error != nil) {
@@ -64,7 +63,7 @@ class ViewController: UIViewController {
             }
         })
     }
-    
+
     func showAlert (title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -72,10 +71,9 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
-    
+
     func showLoginPage () {
         self.performSegue(withIdentifier: "showLogin", sender: self)
     }
-    
-}
 
+}
