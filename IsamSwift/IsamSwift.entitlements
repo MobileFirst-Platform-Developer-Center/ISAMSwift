@@ -4,7 +4,7 @@
 <dict>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.ibm.sample.mfp8isam.IsamSwift</string>
+		<string>$(AppIdentifierPrefix)com.sample.IsamSwift</string>
 	</array>
 </dict>
 </plist>

@@ -1,4 +1,4 @@
-IBM Mobile First Platform Foundation
+IBM MobileFirst Foundation
 ===
 
 ## ISAMSwift
@@ -18,7 +18,6 @@ The ResourceAdapter adapter can be found in https://github.com/MobileFirst-Platf
 
 ### Supported Levels
 * IBM MobileFirst Platform Foundation 8.0
-* IBM Security Access Manager 9.0.2
 
 ### License
 Copyright 2016 IBM Corp.

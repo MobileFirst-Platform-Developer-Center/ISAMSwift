@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "72CEA0FBF3483D6CEB40F4D9A7C111857BD8FC89",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "72CEA0FBF3483D6CEB40F4D9A7C111857BD8FC89" : 9223372036854775807,
+    "E2844E13FE3BF34886AB14CDC462C76897FD34D7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8DE77F03-0098-45DA-90BC-C76631ECF1CA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "72CEA0FBF3483D6CEB40F4D9A7C111857BD8FC89" : "ISAMSwift\/",
+    "E2844E13FE3BF34886AB14CDC462C76897FD34D7" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IsamSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IsamSwift.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.ibm.com\/MFPSamples\/ISAMiOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "72CEA0FBF3483D6CEB40F4D9A7C111857BD8FC89"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.ibm.com\/pranab-agarwal\/IsamLTPA-release80.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2844E13FE3BF34886AB14CDC462C76897FD34D7"
+    }
+  ]
+}
