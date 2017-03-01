@@ -20,6 +20,7 @@ framework module IBMMobileFirstPlatformFoundation { umbrella header "IBMMobileFi
     header "WLSecurityUtils.h"
     header "WLSecurityCommonUtils.h"
     header "WLSecurityConstants.h"
+    header "WLSimpleDataSharing.h"
     
     export * module * { export * } }
 

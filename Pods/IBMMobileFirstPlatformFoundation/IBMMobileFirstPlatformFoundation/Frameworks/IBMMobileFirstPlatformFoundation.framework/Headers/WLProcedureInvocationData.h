@@ -21,7 +21,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- * 
+ *
  * This class holds all data necessary for invoking a procedure, including:
  * <ul>
  * <li>The name of the adapter and procedure to invoke</li>
@@ -32,20 +32,21 @@
 @interface WLProcedureInvocationData : NSObject {
 	@private NSString *adapter;
 	NSString *procedure;
-	
-	// Array of primitive types: (NSString, NSNumber) BOOL values should be created as 
+
+	// Array of primitive types: (NSString, NSNumber) BOOL values should be created as
 	NSArray *parameters;
 	BOOL compressResponse;
 }
 
-/** Sets the procedure parameters.
+/** 
+* Specifies the parameters property.
 *
 * Example:
-* 
+*
 * 		WLProcedureInvocationData  *data = [WLProcedureInvocationData ......];
 * 		NSArray *myParams = [NSArray arrayWithObjects:param1, param2, param3, nil];
 * 		[data setParameters:myParams];
-* 
+*
 */
 // The Array should contain Objects that can be parsed via JSON. NSString and NSNumber work best.
 // For Boolean values, use [NSNumber numberWithBool:]
@@ -80,7 +81,7 @@
 -(id)initWithAdapterName:(NSString *)theAdapter procedureName:(NSString *)theProcedure compressResponse:(BOOL)isCompressResponse;
 
 /**
- * Specifies whether or not the responses from the server must be compressed. 
+ * Specifies whether or not the responses from the server must be compressed.
  *
  * The default value is false.
  *

@@ -29,19 +29,18 @@ typedef enum {
 
 /**
  *
- * Derived from WLResponse, containing error codes and messages in addition to the status in WLResponse. 
+ * Derived from WLResponse, containing error codes and messages in addition to the status in WLResponse.
  * Contains the original response data object from the server as well.
  */
 @interface WLFailResponse : WLResponse {
     WLClientErrorCode* clientErrorCode;
 	NSString *errorCode;
 	NSString *errorMsg;
-	
+
 }
 
 /**
  * The possible errors are described in the WLErrorCode section.
- * The HYPERLINK <a href="_Enum_WLErrorCode" \o "http://wiki.worklight.com/index.php/IphoneSDK#WLErrorCode"> link WLErrorCode </a>section contains a description of possible error codes.
  */
 @property (nonatomic) WLClientErrorCode* clientErrorCode;
 

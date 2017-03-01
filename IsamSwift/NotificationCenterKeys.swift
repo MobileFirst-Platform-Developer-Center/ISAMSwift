@@ -16,6 +16,6 @@
 
 import Foundation
 
-let ACTION_CHALLENGE_RECEIVED = NSNotification.Name("com.sample.IsamSwift.action.challenge.received")
+let ACTION_CHALLENGE_RECEIVED = Notification.Name("com.sample.IsamSwift.action.challenge.received")
 
-let ACTION_CHALLENGE_SUCCESS = NSNotification.Name("com.sample.IsamSwift.action.challenge.success")
+let ACTION_CHALLENGE_SUCCESS = Notification.Name("com.sample.IsamSwift.action.challenge.success")

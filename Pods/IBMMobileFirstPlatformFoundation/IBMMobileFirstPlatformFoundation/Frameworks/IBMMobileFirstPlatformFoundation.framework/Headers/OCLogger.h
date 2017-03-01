@@ -251,11 +251,11 @@ typedef enum {
 
 /**
  Logs a message at a specific OCLogType log level with string replacement using arguments passed.
- This method also attaches a dictionary of user information to the log message that is available when logs are persisted and sent to the server.
+ This method also attaches a dictionary of user information to the log message that is available when logs are persisted and sent to the Analytics Server as custom analytics.
  @param level OCLogType log level used
  @param message String Message logged
  @param arguments va_list Arguments used for string replacements in the message parameter
- @param userInfo NSDictionary Additional data appended to the log message
+ @param userInfo NSDictionary Additional data appended to the log message and sent to the Analytics Server as custom analytics data
  @since IBM Worklight V6.4.0
  */
 -(void) logWithLevel:(OCLogType)level message:(NSString*) message args:(va_list) arguments userInfo:(NSDictionary*) userInfo;

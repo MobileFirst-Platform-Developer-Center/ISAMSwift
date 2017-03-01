@@ -43,5 +43,6 @@ FOUNDATION_EXPORT const unsigned char IBMMobileFirstPlatformFoundationVersionStr
 #import <IBMMobileFirstPlatformFoundation/WLSecurityUtils.h>
 #import <IBMMobileFirstPlatformFoundation/WLSecurityCommonUtils.h>
 #import <IBMMobileFirstPlatformFoundation/WLSecurityConstants.h>
+#import <IBMMobileFirstPlatformFoundation/WLSimpleDataSharing.h>
 //#import <IBMMobileFirstPlatformFoundation/WLWatchConnectivityManager.h>
 //#import <IBMMobileFirstPlatformFoundation/WLCertManagerCommon.h>

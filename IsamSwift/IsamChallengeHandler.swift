@@ -25,8 +25,8 @@ class IsamChallegeHandler: GatewayChallengeHandler {
         super.init(gatewayName: myGateway)
     }
 
-    override func canHandle(_ response: WLResponse!) -> Bool {
-        print ("IsamChallengeHandler: canHandle")
+    override func canHandleResponse(_ response: WLResponse!) -> Bool {
+        print ("IsamChallengeHandler: canHandleResponse")
         if let responseText = response.responseText {
             if (responseText.contains("pkmslogin.form") == true) {
                 print("IsamChallegeHandler.canHandl(): ISAM login form detected. Returning true.")

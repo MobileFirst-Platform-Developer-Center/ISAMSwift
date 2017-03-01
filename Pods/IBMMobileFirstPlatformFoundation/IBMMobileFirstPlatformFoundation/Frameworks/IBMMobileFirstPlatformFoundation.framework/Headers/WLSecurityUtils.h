@@ -93,7 +93,6 @@ extern NSString * const WLClientErrorDomain;
  Reads Base64 encoded file and writes decoded output to output file
  @param handleInput Handle to input file; the caller is responsible for closing the file
  @param outputFileName Full path to output file
- @param stripFileLenPrefix Specifies that the input file is Base64 encoded file downloaded by Direct Update and contains prefix in format {fileLength:xxx}@@@, which should be stripped by the algorithm
  @since IBM Worklight V6.2.0
  */
 +(void) decodeBase64WithFiles:(NSFileHandle*) handleInput output:(NSString*) outputFileName;
