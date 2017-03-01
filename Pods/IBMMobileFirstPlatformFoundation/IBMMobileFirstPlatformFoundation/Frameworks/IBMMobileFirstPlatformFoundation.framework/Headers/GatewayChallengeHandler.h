@@ -60,7 +60,7 @@
  *
  * @param response The WLResponse to be tested.
 **/
--(BOOL)canHandleResponse:(WLResponse *) response;
+-(BOOL)canHandleResponse:(WLResponse *) response  NS_SWIFT_NAME(canHandleResponse(_:));
 
 /**
  * You use this method to send collected credentials to a specific URL. You can also specify request parameters, headers, and timeout.

@@ -120,7 +120,22 @@ extern NSMutableDictionary *piggyBackData;
  *  An object that conforms to the <code>NSURLSessionDataDelegate</code> or <code>NSURLSessionTaskDelegate</code> protocol.
  *
  */
--(void) sendUrlRequest:(NSURLRequest *)request delegate:(id)delegate;
+-(void) sendUrlRequest:(NSURLRequest *)request delegate:(id)delegate NS_SWIFT_NAME(sendUrlRequest(_:));
+
+/**
+ *  This method uses <code>NSURLConnection</code> to execute the provided <code>NSURLRequest</code>.
+ *
+ *  @param request <code>NSURLRequest</code> object
+ *
+ *  @param delegate
+ *  An object that conforms to the <code>NSURLSessionDataDelegate</code> or <code>NSURLSessionTaskDelegate</code> protocol.
+ * @param responseQueue
+ *  An callback queue of type dispatch_queue_t
+ *
+ */
+-(void) sendUrlRequest:(NSURLRequest *)request delegate:(id)delegate responseQueue:(dispatch_queue_t)responseQueue NS_SWIFT_NAME(sendUrlRequest(_:));
+;
+
 
 
 -(void) invokeProcedure:(WLProcedureInvocationData *)invocationData withDelegate:(id <WLDelegate>)delegate;
@@ -146,7 +161,7 @@ extern NSMutableDictionary *piggyBackData;
  *
  * @param challengeHandler The challenge handler to register.
  */
--(void) registerChallengeHandler: (BaseChallengeHandler *) challengeHandler;
+-(void) registerChallengeHandler: (BaseChallengeHandler *) challengeHandler NS_SWIFT_NAME(registerChallengeHandler(_:));
 
 /**
  * You use this method to add a global header, which is sent on each request.
@@ -214,7 +229,7 @@ extern NSMutableDictionary *piggyBackData;
 - (void) setServerUrl: (NSURL*) url;
 
 /**
- * Returns the current IBM MobileFirst Platform server URL
+ * Returns the current IBM MobileFirst Platform server URL.
  *
  * @return IBM MobileFirst Platform server URL
  */
@@ -227,12 +242,18 @@ extern NSMutableDictionary *piggyBackData;
 -(void) pinTrustedCertificatePublicKeyFromFile:(NSString*) certificateFilename;
 
 /**
- * Sets the device's Display name in the server (calls update registration)
+ * Sets the display name of the device. The display name is stored in the MobileFirst Server registration data.
+ *
+ * @param deviceDisplayName The device display name to set.
+ * @param completionHandler A completion-handler callback function.
  */
 -(void) setDeviceDisplayName:(NSString*)deviceDisplayName WithCompletionHandler:(void(^)(NSError* error))completionHandler;
 
 /**
- * Get the Display name of this device from the MFP server
+ * Gets the display name of the device. The display name is retrieved from the MobileFirst Server registration data.
+ *
+ * @param completionHandler A completion-handler callback function. In the case of a successful completion, the display name
+ *                          of the device is returned in the completion handler's <code>deviceDisplayName</code> parameter.
  */
 -(void) getDeviceDisplayNameWithCompletionHandler:(void(^)(NSString *deviceDisplayName , NSError *error))completionHandler;
 

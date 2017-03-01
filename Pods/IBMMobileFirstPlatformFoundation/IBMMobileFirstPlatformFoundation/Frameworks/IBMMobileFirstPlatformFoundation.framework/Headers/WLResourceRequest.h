@@ -247,12 +247,32 @@ extern NSString * const WLHttpMethodDelete;
 
 /**
  *
+ * Sends a request and uses the <code>completionHandler</code> block to handle the response
+ * @param queue private queue to specify callback queue for completionHandler block
+ * @param completionHandler (void(^) (WLResponse* response, NSError* error)) Block that is triggered when a response has been received.
+ *
+ */
+-(void)sendWithCompletionHandler:(dispatch_queue_t)queue
+               completionHandler:(void(^) (WLResponse* response, NSError* error))completionHandler;
+
+/**
+ *
  * Sends a request and uses a delegate to handle the response
  * @param delegate Delegate that conforms to both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols
  * Note: The delegate must implement both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols.
  *
  */
 -(void)sendWithDelegate:(id)delegate;
+
+/**
+ *
+ * Sends a request and uses a delegate to handle the response
+ * @param delegate Delegate that conforms to both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols
+ * @param queue private queue to specify callback queue for delegate
+ * Note: The delegate must implement both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols.
+ *
+ */
+-(void)sendWithDelegate:(id)delegate responseQueue:(dispatch_queue_t)queue;
 
 /**
  *
@@ -267,6 +287,20 @@ extern NSString * const WLHttpMethodDelete;
 
 /**
  *
+ * Sends a request with the provided text as a request body and uses a <code>completionHandler</code> block to handle the response
+ * @param body Request body
+ * @param queue private queue to specify callback queue for completionHandler block
+ * @param completionHandler (void(^) (WLResponse* response, NSError* error)) Block that is triggered when a response has been received
+ * Note: Using methods other than POST or PUT will omit the request body.
+ *
+ */
+-(void)sendWithBody:(NSString*)body
+      responseQueue:(dispatch_queue_t)queue
+  completionHandler:(void(^) (WLResponse* response, NSError* error))completionHandler;
+
+
+/**
+ *
  * Sends a request with the provided text as a request body and uses a delegate to handle the response
  * @param body Request body
  * @param delegate Delegate that conforms to both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols
@@ -275,6 +309,18 @@ extern NSString * const WLHttpMethodDelete;
  *
  */
 -(void)sendWithBody:(NSString*)body delegate:(id)delegate;
+
+/**
+ *
+ * Sends a request with the provided text as a request body and uses a delegate to handle the response
+ * @param body Request body
+ * @param delegate Delegate that conforms to both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols
+ * @param queue private queue to specify callback queue for delegate
+ * Note: The delegate must implement both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols.
+ * Note: Using methods other than POST or PUT will omit the request body.
+ *
+ */
+-(void)sendWithBody:(NSString*)body delegate:(id)delegate responseQueue:(dispatch_queue_t)queue;
 
 /**
  *
@@ -289,6 +335,19 @@ extern NSString * const WLHttpMethodDelete;
 
 /**
  *
+ * Sends a request with form parameters as a request body and uses a <code>completionHandler</code> block to handle the response
+ * @param bodyParameters Dictionary of form parameters
+ * @param queue private queue to specify callback queue for completionHandler block
+ * @param completionHandler (void(^) (WLResponse* response, NSError* error)) Block that is triggered when a response has been received
+ * Note: Using methods other than POST or PUT will omit the request body.
+ *
+ */
+-(void)sendWithFormParameters:(NSDictionary*)formParameters
+                responseQueue:(dispatch_queue_t)queue
+            completionHandler:(void(^) (WLResponse* response, NSError* error))completionHandler;
+
+/**
+ *
  * Sends a request with form parameters as a request body and uses a delegate to handle the response
  * @param bodyParameters Dictionary of form parameters
  * @param delegate Delegate that conforms to both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols
@@ -300,6 +359,19 @@ extern NSString * const WLHttpMethodDelete;
 
 /**
  *
+ * Sends a request with form parameters as a request body and uses a delegate to handle the response
+ * @param bodyParameters Dictionary of form parameters
+ * @param delegate Delegate that conforms to both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols
+ * @param queue private queue to specify callback queue for delegate
+ * Note: The delegate must implement both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols.
+ * Note: Using methods other than POST or PUT will omit the request body.
+ *
+ */
+-(void)sendWithFormParameters:(NSDictionary*)formParameters delegate:(id)delegate
+                responseQueue:(dispatch_queue_t)queue;
+
+/**
+ *
  * Sends a request with the provided JSON and uses a <code>completionHandler</code> block to handle the response
  * @param json JSON as a dictionary
  * @param completionHandler (void(^) (WLResponse* response, NSError* error)) Block that is triggered when a response has been received
@@ -307,6 +379,19 @@ extern NSString * const WLHttpMethodDelete;
  *
  */
 -(void)sendWithJSON:(NSDictionary*)json
+  completionHandler:(void(^) (WLResponse* response, NSError* error))completionHandler;
+
+/**
+ *
+ * Sends a request with the provided JSON and uses a <code>completionHandler</code> block to handle the response
+ * @param json JSON as a dictionary
+ * @param queue private queue to specify callback queue for completionHandler block
+ * @param completionHandler (void(^) (WLResponse* response, NSError* error)) Block that is triggered when a response has been received
+ * Note: Using methods other than POST or PUT will omit the request body.
+ *
+ */
+-(void)sendWithJSON:(NSDictionary*)json
+      responseQueue:(dispatch_queue_t)queue
   completionHandler:(void(^) (WLResponse* response, NSError* error))completionHandler;
 
 /**
@@ -322,6 +407,18 @@ extern NSString * const WLHttpMethodDelete;
 
 /**
  *
+ * Sends a request with the provided JSON and uses a delegate to handle the response
+ * @param json JSON as a dictionary
+ * @param delegate Delegate that conforms to both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols
+ * @param queue private queue to specify callback queue for delegate
+ * Note: The delegate must implement both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols.
+ * Note: Using methods other than POST or PUT will omit the request body.
+ *
+ */
+-(void)sendWithJSON:(NSDictionary*)json delegate:(id)delegate responseQueue:(dispatch_queue_t)queue;
+
+/**
+ *
  * Sends a request with the provided request data and uses <code>completionHandler</code> block to handle the response
  * @param data Request data
  * @param completionHandler (void(^) (WLResponse* response, NSError* error)) Block that is triggered when a response has been received
@@ -333,6 +430,20 @@ extern NSString * const WLHttpMethodDelete;
 
 /**
  *
+ * Sends a request with the provided request data and uses <code>completionHandler</code> block to handle the response
+ * @param data Request data
+ * @param queue private queue to specify callback queue for completionHandler block
+ * @param completionHandler (void(^) (WLResponse* response, NSError* error)) Block that is triggered when a response has been received
+ * Note: Using methods other than POST or PUT will omit the request body.
+ *
+ */
+-(void)sendWithData:(NSData*)data
+      responseQueue:(dispatch_queue_t)queue
+  completionHandler:(void(^) (WLResponse* response, NSError* error))completionHandler;
+
+
+/**
+ *
  * Sends a request with the provided request data and uses a delegate to handle the response
  * @param data Request data
  * @param delegate Delegate that conforms to both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols
@@ -341,6 +452,18 @@ extern NSString * const WLHttpMethodDelete;
  *
  */
 -(void)sendWithData:(NSData*)data delegate:(id)delegate;
+
+/**
+ *
+ * Sends a request with the provided request data and uses a delegate to handle the response
+ * @param data Request data
+ * @param delegate Delegate that conforms to both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols
+ * @param queue private queue to specify callback queue for delegate
+ * Note: The delegate must implement both <code>NSURLSessionDataDelegate</code> and <code>NSURLSessionTaskDelegate</code> protocols.
+ * Note: Using methods other than POST or PUT will omit the request body
+ *
+ */
+-(void)sendWithData:(NSData*)data delegate:(id)delegate responseQueue:(dispatch_queue_t)queue;
 
 //-(void)abort;
 
