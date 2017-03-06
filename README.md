@@ -20,7 +20,7 @@ The ResourceAdapter adapter can be found in https://github.com/MobileFirst-Platf
 * IBM MobileFirst Platform Foundation 8.0
 
 ### License
-Copyright 2016 IBM Corp.
+Copyright 2017 IBM Corp.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
